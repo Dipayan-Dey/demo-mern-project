@@ -40,7 +40,7 @@ function Enquiry() {
   };
   let getData = () => {
     axios
-      .get("http://localhost:1711/api/user/routes/view")
+      .get("https://demo-mern-project.onrender.com/api/user/routes/view")
       .then((res) => {
         return res.data;
       })
@@ -61,7 +61,7 @@ function Enquiry() {
 
       axios
         .put(
-          `http://localhost:1711/api/user/routes/editrow/${formData._id}`,
+          `https://demo-mern-project.onrender.com/api/user/routes/editrow/${formData._id}`,
           formData
         )
         .then((res) => {
