@@ -78,7 +78,7 @@ function Enquiry() {
         });
     } else {
       axios
-        .post("http://localhost:1711/api/user/routes/insert", formData)
+        .post("https://demo-mern-project.onrender.com/api/user/routes/insert", formData)
         .then((res) => {
           console.log(res.data);
           // alert("Form Saved");

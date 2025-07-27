@@ -33,7 +33,7 @@ function ShowData({ data, getData, setFormData }) {
           // Your axios delete logic here...
 
           axios
-            .delete(`http://localhost:1711/api/user/routes/delete/${deleteId}`)
+            .delete(`https://demo-mern-project.onrender.com/api/user/routes/delete/${deleteId}`)
             .then((res) => {
               // alert(deleteId)
               //  toast.success("Data Delete Successfully..")
@@ -52,7 +52,7 @@ function ShowData({ data, getData, setFormData }) {
 
   const editdata = (editid) => {
     axios
-      .get(`http://localhost:1711/api/user/routes/edit/${editid}`)
+      .get(`https://demo-mern-project.onrender.com/api/user/routes/edit/${editid}`)
       .then((res) => {
         let data = res.data;
         setFormData(data.updatedData);

@@ -17,7 +17,7 @@ function Admin() {
   // useEffect(() => {
     // Simulating API call with sample data
    let getData = () => {
-   axios.get("http://localhost:1711/api/user/routes/view")
+   axios.get("https://demo-mern-project.onrender.com/api/user/routes/view")
       .then((res) => {
         console.log("API Response:", res.data);
         setDatalist(res.data.datalist);
