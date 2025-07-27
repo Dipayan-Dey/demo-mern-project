@@ -16,7 +16,11 @@ app.use("/api/user/routes",userrouter)
 
 
 
-mongoose.connect(process.env.DBURL).then(()=>{
+mongoose.connect(process.env.DBURL,{
+    useNewUrlParser: true,
+  useUnifiedTopology: true,
+}).then(()=>{
+  
   console.log("Server successfully Connect")
   app.listen(process.env.PORT || 3000,()=>{
     console.log("Successfully app run on this port")
