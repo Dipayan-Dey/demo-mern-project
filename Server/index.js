@@ -20,6 +20,7 @@ mongoose.connect(process.env.DBURL).then(()=>{
   console.log("Server successfully Connect")
   app.listen(process.env.PORT || 3000,()=>{
     console.log("Successfully app run on this port")
+    // console.log("hello")
   })
 }).catch((err)=>{
     console.log(err)
